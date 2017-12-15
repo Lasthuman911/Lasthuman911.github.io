@@ -73,6 +73,8 @@
 
 
 
+  
+
 
   <link rel="alternate" href="/atom.xml" title="lightman blog" type="application/atom+xml" />
 
@@ -86,7 +88,7 @@
 <meta property="og:url" content="http://yoursite.com/tags/index.html">
 <meta property="og:site_name" content="lightman blog">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-12-14T13:12:52.000Z">
+<meta property="og:updated_time" content="2017-12-15T01:34:08.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="tags">
 
@@ -306,7 +308,14 @@
       <div class="post-body">
         
         
-          
+          <div class="tag-cloud">
+            <div class="tag-cloud-title">
+                目前共计 2 个标签
+            </div>
+            <div class="tag-cloud-tags">
+              <a href="/tags/gitPage/" style="font-size: 12px; color: #ccc">gitPage</a> <a href="/tags/hexo/" style="font-size: 12px; color: #ccc">hexo</a>
+            </div>
+          </div>
         
       </div>
       
@@ -324,18 +333,6 @@
 
 
           
-
-  
-    <div class="comments" id="comments">
-      
-        <div onclick="showGitment()" id="gitment-display-button">显示 Gitment 评论</div>
-        <div id="gitment-container" style="display:none"></div>
-      
-    </div>
-
-  
-
-
 
         </div>
         
@@ -397,10 +394,10 @@
               
               
               <div class="site-state-item site-state-tags">
-                
+                <a href="/tags/index.html">
                   <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
-                
+                </a>
               </div>
             
 
@@ -634,34 +631,6 @@
 
     
 
-    
-      <script type="text/javascript">
-      function renderGitment(){
-        var gitment = new Gitmint({
-            id: window.location.pathname, 
-            owner: 'Lasthuman911',
-            repo: 'Lasthuman911.github.io',
-            
-            lang: "" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-            
-            oauth: {
-            
-            
-                client_secret: '7ec0bb15669f0453663411f89b933f76e3eac366',
-            
-                client_id: '919cfde791aafd5b6d93'
-            }});
-        gitment.render('gitment-container');
-      }
-
-      
-      function showGitment(){
-        document.getElementById("gitment-display-button").style.display = "none";
-        document.getElementById("gitment-container").style.display = "block";
-        renderGitment();
-      }
-      
-      </script>
     
 
 
